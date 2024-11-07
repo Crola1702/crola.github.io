@@ -1,0 +1,15 @@
+{% extends "base.html" %} 
+{% block title %}{{ article.title }}{% endblock %}
+{% block content %}
+<h1>{{ article.title }}</h1>
+<h2>Creado en {{ article.date|strftime() }}</h2>
+<h2>Escrito por {{ article.author }}</h2>
+<h3>Tags:</h3>
+<ul>
+  {% for tag in article.tags %}
+    <li>{{ tag }}</li>
+  {% endfor %}
+</ul>
+<h2>Contenido:</h2>
+{{ article.content }}
+{% endblock %}
