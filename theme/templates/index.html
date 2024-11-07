@@ -2,8 +2,12 @@
 {% block title %}{{ SITENAME }}{% endblock %}
 {% block content %}
 {% for article in articles %}
+<hr>
 <a href="{{ article.url }}">
   <h1>{{ article.title }}</h1>
 </a>
+<h3>Creado en {{ article.date|strftime('%d %B %Y') }}</h3>
+<p>{{ article.summary }}</p>
+<hr>
 {% endfor %}
 {% endblock %}

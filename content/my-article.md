@@ -5,6 +5,7 @@ Author: Cristóbal Arroyo
 Tags: proyecto, desarrollo, software
 Modified: 2024-11-07
 Summary: Mi primer proyecto serio
+Category: Desarrollo
 ---
 
 # DogSpa
